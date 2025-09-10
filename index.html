@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Calling for NHL Accountability - Domestic Violence & Sexual Assault Reform</title>
+  <meta name="description" content="Urging the NHL and St. Louis Blues to implement comprehensive policies addressing domestic violence and sexual assault in professional hockey.">
+  <meta name="keywords" content="NHL, domestic violence, sexual assault, accountability, hockey reform, St. Louis Blues">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --default-color: #212529;
+      --heading-color: #37517e;
+      --accent-color: #428bca;
+      --surface-color: #ffffff;
+      --contrast-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      color: var(--default-color);
+      background-color: var(--surface-color);
+      font-family: "Open Sans", sans-serif;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: color-mix(in srgb, var(--accent-color), transparent 25%);
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--heading-color);
+      font-family: "Raleway", sans-serif;
+    }
+
+    /* Header */
+    .header {
+      color: var(--default-color);
+      background-color: var(--surface-color);
+      padding: 15px 0;
+      transition: all 0.5s;
+      z-index: 997;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header .logo {
+      line-height: 1;
+    }
+
+    .header .logo h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .navmenu {
+      padding: 0;
+      z-index: 9997;
+    }
+
+    .navmenu ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    .navmenu li {
+      position: relative;
+    }
+
+    .navmenu a, .navmenu a:focus {
+      color: var(--default-color);
+      padding: 18px 15px;
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    .navmenu a i, .navmenu a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+      transition: 0.3s;
+    }
+
+    .navmenu a:hover, .navmenu .active, .navmenu .active:focus {
+      color: var(--accent-color);
+    }
+
+    .btn-getstarted, .btn-getstarted:focus {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+      font-size: 14px;
+      padding: 8px 25px;
+      margin: 0 0 0 30px;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .btn-getstarted:hover, .btn-getstarted:focus:hover {
+      color: var(--contrast-color);
+      background: color-mix(in srgb, var(--accent-color), transparent 15%);
+    }
+
+    /* Hero Section */
+    .hero {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      padding: 160px 0 80px 0;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('assets/NHL.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--contrast-color);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      border: 3px solid var(--contrast-color);
+      padding: 20px 30px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .hero p {
+      color: color-mix(in srgb, var(--contrast-color), transparent 30%);
+      margin: 15px 0 0 0;
+      font-size: 26px;
+    }
+
+    .hero .btn-get-started {
+      color: var(--contrast-color);
+      background: rgba(255, 255, 255, 0.1);
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 40px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero .btn-get-started:hover {
+      color: var(--accent-color);
+      background: var(--surface-color);
+      border-color: var(--surface-color);
+    }
+
+    /* Sections */
+    .section {
+      color: var(--default-color);
+      background-color: var(--surface-color);
+      padding: 60px 0;
+      scroll-margin-top: 100px;
+      overflow: clip;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 60px;
+      position: relative;
+    }
+
+    .section-title h2 {
+      font-size: 13px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      padding: 8px 20px;
+      margin: 0;
+      background: color-mix(in srgb, var(--accent-color), transparent 90%);
+      color: var(--accent-color);
+      display: inline-block;
+      text-transform: uppercase;
+      border-radius: 50px;
+    }
+
+    .section-title p {
+      color: var(--heading-color);
+      margin: 10px 0 0 0;
+      font-size: 48px;
+      font-weight: 700;
+      font-family: "Raleway", sans-serif;
+    }
+
+    /* Call to Action Section */
+    .call-to-action {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 80px 0;
+    }
+
+    .call-to-action h3 {
+      color: var(--contrast-color);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .call-to-action p {
+      color: var(--contrast-color);
+      margin-bottom: 30px;
+    }
+
+    .call-to-action ul {
+      color: var(--contrast-color);
+      margin: 30px 0;
+    }
+
+    .call-to-action ul li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .call-to-action ul li:before {
+      content: "•";
+      color: var(--contrast-color);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Resources Section */
+    .resources .btn {
+      margin: 10px 5px;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      background: var(--contrast-color);
+      border: 2px solid var(--default-color);
+      color: var(--default-color);
+    }
+
+    .resources .btn:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .resources .btn-primary {
+      background: var(--contrast-color);
+      border: 2px solid var(--default-color);
+      color: var(--default-color);
+    }
+
+    .resources .btn-primary:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .resources .btn-outline {
+      background: var(--contrast-color);
+      border: 2px solid var(--default-color);
+      color: var(--default-color);
+    }
+
+    .resources .btn-outline:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    /* Footer */
+    .footer {
+      color: var(--default-color);
+      background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+      font-size: 14px;
+      padding: 40px 0 20px 0;
+      position: relative;
+    }
+
+    .footer .copyright {
+      padding-top: 25px;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    }
+
+    .footer .copyright p {
+      margin-bottom: 0;
+    }
+
+    /* Mobile Navigation */
+    .mobile-nav-toggle {
+      color: var(--default-color);
+      font-size: 28px;
+      line-height: 0;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    /* Scroll Top */
+    .scroll-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 15px;
+      bottom: 15px;
+      z-index: 99999;
+      background-color: var(--accent-color);
+      width: 44px;
+      height: 44px;
+      border-radius: 50px;
+      transition: all 0.4s;
+    }
+
+    .scroll-top i {
+      font-size: 24px;
+      color: var(--contrast-color);
+      line-height: 0;
+    }
+
+    .scroll-top:hover {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+      color: var(--contrast-color);
+    }
+
+    .scroll-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @media (max-width: 1199px) {
+      .navmenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        transition: 0.3s;
+        z-index: 9997;
+      }
+
+      .navmenu ul {
+        position: absolute;
+        inset: 0;
+        padding: 50px 0 10px 0;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.9);
+        overflow-y: auto;
+        transition: 0.3s;
+        z-index: 9998;
+        flex-direction: column;
+      }
+
+      .navmenu a {
+        display: block;
+        padding: 12px 20px;
+        color: var(--default-color);
+        font-weight: 500;
+        border-radius: 0;
+      }
+
+      .mobile-nav-active {
+        overflow: hidden;
+      }
+
+      .mobile-nav-active .mobile-nav-toggle {
+        color: #fff;
+        position: absolute;
+        font-size: 32px;
+        top: 15px;
+        right: 15px;
+        margin-right: 0;
+        z-index: 9999;
+      }
+
+      .mobile-nav-active .navmenu {
+        right: 0;
+      }
+
+      .mobile-nav-active .navmenu:focus {
+        outline: none;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      .hero p {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .section-title p {
+        font-size: 32px;
+      }
+
+      .hero .btn-get-started {
+        font-size: 14px;
+        padding: 10px 25px;
+        margin: 5px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header .logo h1 {
+        font-size: 24px;
+      }
+
+      .hero {
+        padding: 120px 0 60px 0;
+        background-attachment: scroll;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+        padding: 12px 16px;
+        margin: 0 10px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        padding: 0 15px;
+      }
+
+      .hero .d-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero .btn-get-started {
+        font-size: 14px;
+        padding: 12px 30px;
+        margin: 8px 0;
+        width: 200px;
+        text-align: center;
+      }
+
+      .section {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        padding-bottom: 40px;
+      }
+
+      .section-title p {
+        font-size: 28px;
+      }
+
+      .call-to-action {
+        padding: 60px 0;
+      }
+
+      .call-to-action h3 {
+        font-size: 24px;
+      }
+
+      .call-to-action ul li {
+        margin-bottom: 20px;
+        padding-left: 15px;
+        line-height: 1.6;
+      }
+
+      .resources .btn {
+        font-size: 14px;
+        padding: 12px 20px;
+        margin: 8px 2px;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .resources .row .col-lg-6,
+      .resources .row .col-lg-12 {
+        padding: 0 10px;
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 20px;
+        padding: 10px 12px;
+        margin: 0 5px;
+      }
+
+      .hero p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .section-title p {
+        font-size: 24px;
+      }
+
+      .call-to-action h3 {
+        font-size: 20px;
+      }
+
+      .call-to-action ul li {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .resources .btn {
+        font-size: 13px;
+        padding: 10px 15px;
+        margin: 6px 0;
+      }
+
+      .about .content p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .footer p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="#hero" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">NHL Accountability</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">The Issue</a></li>
+          <li><a href="#demands">Our Demands</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <h1 data-aos="fade-up" data-aos-delay="100">Calling for NHL Accountability</h1>
+        <p data-aos="fade-up" data-aos-delay="200">The NHL Must Address Domestic Violence and Sexual Assault</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#about" class="btn-get-started">Learn More</a>
+          <a href="#contact" class="btn-get-started">Take Action</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>The Problem</h2>
+        <p>A Crisis in Professional Hockey</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+            <p>
+              We are urging the St. Louis Blues and the National Hockey League to implement immediate, meaningful reforms to address domestic violence and sexual assault within professional hockey. Recent roster decisions by the Blues, including players like Logan Mailloux and Milan Lucic with documented histories of assault and violence, highlight a systemic problem that demands urgent attention.
+            </p>
+            <p>
+              The NHL stands alone among major professional sports leagues in lacking a comprehensive, enforceable policy addressing domestic violence and sexual assault. This absence of clear standards allows individuals with documented histories of abuse to continue in prominent roles without transparent accountability measures, sending a troubling message to fans, survivors, and communities that athletic performance can overshadow serious off-ice conduct.
+            </p>
+            <p style="font-weight: 600; color: var(--accent-color);">
+              With domestic violence affecting over 10 million Americans annually, no institution—including professional sports—can remain passive in addressing this crisis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="demands" class="call-to-action section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3>We call on the NHL and the St Louis Blues to:</h3>
+            
+            <ul>
+              <li><strong>Establish a comprehensive domestic violence and sexual assault policy</strong> featuring clear standards, consequences, and investigation protocols</li>
+              
+              <li><strong>Implement suspension procedures</strong> for players under credible investigation and require completion of verified accountability programs before reinstatement</li>
+              
+              <li><strong>Mandate ongoing education and prevention training</strong> for all players, coaching staff, and organizational personnel</li>
+              
+              <li><strong>Collaborate with domestic violence professionals</strong> and survivor advocacy groups to develop trauma-informed, survivor-centered approaches</li>
+            </ul>
+
+            <p style="margin-top: 30px; font-size: 18px; font-weight: 500;">
+              This is not a demand for perfection—it is a call for progress and leadership. The NHL has an opportunity to demonstrate that integrity and accountability are as valued as athletic achievement.
+            </p>
+            
+            <p style="font-size: 20px; font-weight: 700; margin-top: 20px;">
+              Professional hockey must be a space free from domestic violence. The time for action is now.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Evidence</h2>
+        <p>Supporting Documentation</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="100">
+            <p class="mb-4">Learn more about the documented cases and broader context of this issue:</p>
+            
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://bleacherreport.com/articles/10007984-nhl-prospect-logan-mailloux-charged-with-distributing-photo-from-sexual-encounter" target="_blank" class="btn btn-primary">Logan Mailloux Case - Bleacher Report</a>
+              </div>
+              
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://goodmenproject.com/featured-content/nhl-dv-petition-mkdn/" target="_blank" class="btn btn-outline">NHL DV Petition Analysis</a>
+              </div>
+              
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://www.sportskeeda.com/us/nhl/news-milan-lucic-run-police-back-2011-shouting-match-girlfriend" target="_blank" class="btn btn-outline">Milan Lucic 2011 Incident</a>
+              </div>
+              
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://dailyhive.com/vancouver/lucic-wife-attempted-choke-her-police-report" target="_blank" class="btn btn-outline">Lucic Police Report Details</a>
+              </div>
+              
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://www.sportingnews.com/us/nhl/news/evander-kane-bankruptcy-domestic-assault-allegations/dp0kxlpi036jfyxphtt8k5ig" target="_blank" class="btn btn-outline">Evander Kane Allegations</a>
+              </div>
+              
+              <div class="col-lg-6 col-md-12 mb-3">
+                <a href="https://www.bbc.com/news/world-us-canada-62324446" target="_blank" class="btn btn-outline">Hockey Canada Scandal - BBC</a>
+              </div>
+              
+              <div class="col-lg-12 col-md-12 mb-3">
+                <a href="https://www.sportingnews.com/us/nhl/news/blackhawks-sexual-assault-scandal-explained-gm-stan-bowman-steps-aside-full-timeline-2010-incident/dvghc204apyw1ssgggrch4x1g" target="_blank" class="btn btn-primary">Blackhawks Sexual Assault Scandal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2024</span> <strong class="px-1">NHL Accountability Campaign</strong> <span>All Rights Reserved</span></p>
+      <p class="mt-2">
+        <a href="#">Contact Us</a> | 
+        <a href="mailto:info@nhlaccountability.org">info@nhlaccountability.org</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+
+    // Mobile Navigation Toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navMenu = document.querySelector('.navmenu');
+
+    if (mobileNavToggle) {
+      mobileNavToggle.addEventListener('click', function() {
+        document.body.classList.toggle('mobile-nav-active');
+      });
+    }
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.navmenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('mobile-nav-active');
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Scroll to top functionality
+    const scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+
+    scrollTop?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    document.addEventListener('scroll', toggleScrollTop);
+    window.addEventListener('load', toggleScrollTop);
+
+    // Header scroll effect
+    const selectHeader = document.querySelector('#header');
+    if (selectHeader) {
+      document.addEventListener('scroll', () => {
+        window.scrollY > 100 ? selectHeader.classList.add('scrolled') : selectHeader.classList.remove('scrolled');
+      });
+    }
+
+    // Active navigation highlighting
+    const navLinks = document.querySelectorAll('.navmenu a');
+    const sections = document.querySelectorAll('section[id]');
+
+    function highlightNavigation() {
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 100;
+        const sectionId = current.getAttribute('id');
+        const navLink = document.querySelector(`.navmenu a[href*="${sectionId}"]`);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          if (navLink) navLink.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', highlightNavigation);
+    window.addEventListener('load', highlightNavigation);
+  </script>
+
+</body>
+
+</html>
